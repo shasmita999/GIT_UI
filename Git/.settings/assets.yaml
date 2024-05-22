@@ -1,0 +1,31 @@
+name: Git
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Git/src
+        type: javaClasspath
+  - name: _google_com_4e6.ma
+    type: moeb.applicationPackage
+  - name: demo.recdata
+  - name: demo.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Git/demo.recdata
+        type: recsessionRecdata
+  - name: demo.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF183B37B28C40C4CEE43239313833
+    dependencies: 
+      - path: /Git/_google_com_4e6.ma
+        type: test#moeb.applicationPackage
+      - path: /Git/demo.recsession
+        type: testRecsession
+  - name: src
+    resources: 
