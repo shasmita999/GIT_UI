@@ -7,6 +7,8 @@ resources:
     dependencies: 
       - path: /Git/src
         type: javaClasspath
+  - name: _google_com_4bc.ma
+    type: moeb.applicationPackage
   - name: _google_com_4e6.ma
     type: moeb.applicationPackage
   - name: demo.recdata
@@ -23,7 +25,7 @@ resources:
       type: com.ibm.rational.test.lt.lttest
       uid: A1EF183B37B28C40C4CEE43239313833
     dependencies: 
-      - path: /Git/_google_com_4e6.ma
+      - path: /Git/_google_com_4bc.ma
         type: test#moeb.applicationPackage
       - path: /Git/demo.recsession
         type: testRecsession
