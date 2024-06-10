@@ -1,0 +1,30 @@
+name: test
+version: 2
+projectReferences: 
+  - /Git
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /test/src
+        type: javaClasspath
+  - name: TEest.recdata
+  - name: TEest.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /test/TEest.recdata
+        type: recsessionRecdata
+  - name: TEest.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF26DF74505940F6D8B56230343538
+    dependencies: 
+      - path: /Git/_google_com_4bc.ma
+        type: test#moeb.applicationPackage
+      - path: /test/TEest.recsession
+        type: testRecsession
+  - name: src
+    resources: 
