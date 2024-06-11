@@ -59,6 +59,36 @@ resources:
   - name: demo_1716384340800_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: demo_1716384344606.executiondlr
+  - name: demo_1718029350471.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1718029350471
+      tags: 
+      testId: A1EF183B37B28C40C4CEE43239313833
+      testName: demo
+    dependencies: 
+      - path: /Git/demo.testsuite
+        type: statsSessionTest
+      - path: /Git/demo_1718029350471.xmoebreport
+        type: statsSessionAsset
+      - path: /Git/demo_1718029350471_orch!system.mstats
+        type: statsSessionStore
+      - path: /Git/demo_1718029350471_orch!system.rstats
+        type: statsSessionStore
+      - path: /Git/demo_1718029350471_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Git/demo_1718029350471_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Git/demo_1718029360813.executiondlr
+        type: statsSessionAsset
+  - name: demo_1718029350471.xmoebreport
+  - name: demo_1718029350471_orch!system.mstats
+  - name: demo_1718029350471_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: demo_1718029350471_perf!localhost.mstats
+  - name: demo_1718029350471_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: demo_1718029360813.executiondlr
   - name: src
     resources: 
       - name: test
