@@ -1,0 +1,30 @@
+name: Git_demo_Devops
+version: 2
+projectReferences: 
+  - /Git
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Git_demo_Devops/src
+        type: javaClasspath
+  - name: TestUI.recdata
+  - name: TestUI.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Git_demo_Devops/TestUI.recdata
+        type: recsessionRecdata
+  - name: TestUI.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF27EB51D5AB10CC72B76535666561
+    dependencies: 
+      - path: /Git/_google_com_4bc.ma
+        type: test#moeb.applicationPackage
+      - path: /Git_demo_Devops/TestUI.recsession
+        type: testRecsession
+  - name: src
+    resources: 
