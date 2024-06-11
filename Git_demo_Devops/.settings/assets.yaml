@@ -26,5 +26,39 @@ resources:
         type: test#moeb.applicationPackage
       - path: /Git_demo_Devops/TestUI.recsession
         type: testRecsession
+  - name: TestUI_1718109037107.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1718109037107
+      tags: 
+      testId: A1EF27EB51D5AB10CC72B76535666561
+      testName: TestUI
+    dependencies: 
+      - path: /Git_demo_Devops/TestUI.testsuite
+        type: statsSessionTest
+      - path: /Git_demo_Devops/TestUI_1718109037107.xmoebreport
+        type: statsSessionAsset
+      - path: /Git_demo_Devops/TestUI_1718109037107_orch!system.mstats
+        type: statsSessionStore
+      - path: /Git_demo_Devops/TestUI_1718109037107_orch!system.rstats
+        type: statsSessionStore
+      - path: /Git_demo_Devops/TestUI_1718109037107_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Git_demo_Devops/TestUI_1718109037107_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Git_demo_Devops/TestUI_1718109044321.executiondlr
+        type: statsSessionAsset
+  - name: TestUI_1718109037107.xmoebreport
+  - name: TestUI_1718109037107_orch!system.mstats
+  - name: TestUI_1718109037107_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: TestUI_1718109037107_perf!localhost.mstats
+  - name: TestUI_1718109037107_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: TestUI_1718109044321.executiondlr
   - name: src
     resources: 
+      - name: test
+        resources: 
+          - name: TestUI_Test_A1EF27EB51D5AB10CC72B76535666561.java
+            type: com.ibm.rational.test.lt.generatedCode
