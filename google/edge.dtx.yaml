@@ -1,0 +1,143 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open google
+      meta:
+        browserName: edge
+        browserVersion: 133.0.3065.92
+        platformName: windows
+      url: '${APP_GOOGLE_URL}'
+  - with:
+      note: Google
+      steps:
+        - click:
+            shot: shot/62aenh.dti.jpeg#150
+            object: html.textarea
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //textarea[@id='APjFqb']
+        - click:
+            shot: shot/zfkzqy.dti.jpeg#254
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[2]
+        - click:
+            shot: shot/fdmmzx.dti.jpeg#468
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/mra6po.dti.jpeg#582
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          About
+                          Store
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/qeubb3.dti.jpeg#731
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[3]/form/div
+        - click:
+            shot: shot/f2sux4.dti.jpeg#863
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: 'Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી
+                          ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ'
+        - click:
+            shot: shot/zvtkqp.dti.jpeg#974
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: 'Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી
+                          ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ'
+        - click:
+            shot: shot/4aage3.dti.jpeg#1029
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[2]
+        - click:
+            shot: shot/c56rjq.dti.jpeg#1134
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/daybh5.dti.jpeg#1245
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/np5s7e.dti.jpeg#1359
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          About
+                          Store
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/ybmmp3.dti.jpeg#1470
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          About
+                          Store
+                          GmailImages
+                          Sign in
+        - click:
+            shot: shot/hpbtbx.dti.jpeg#1619
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[3]/form/div
+        - click:
+            shot: shot/rya6x5.dti.jpeg#1751
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: 'Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી
+                          ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ'
+        - click:
+            shot: shot/3s55dw.dti.jpeg#1862
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: 'Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી
+                          ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ'
+vars:
+  APP_GOOGLE_URL:
+    expr: https://www.google.com/
+    modifier: in
