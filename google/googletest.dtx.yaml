@@ -4,7 +4,7 @@ steps:
       identifiers:
         - properties:
             - value:
-                - val: ''
+                - val: I'm Feeling Lucky
       properties:
-        - test:
-            - val: test
+        - Exists:
+            - val: 'true'
