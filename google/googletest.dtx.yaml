@@ -1,5 +1,6 @@
 steps:
   - verify:
+      shot: shot/62aenh.dti.jpeg
       object: html.inputbutton
       identifiers:
         - properties:
