@@ -1,1 +1,10 @@
-{}
+steps:
+  - verify:
+      object: html.inputbutton
+      identifiers:
+        - properties:
+            - value:
+                - val: ''
+      properties:
+        - test:
+            - val: test
