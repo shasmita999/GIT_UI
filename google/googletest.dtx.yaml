@@ -8,3 +8,5 @@ steps:
       properties:
         - Exists:
             - val: 'true'
+  - click:
+      object: html.textarea
