@@ -1,0 +1,115 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open google
+      meta:
+        browserName: edge
+        browserVersion: 134.0.3124.51
+        platformName: windows
+      url: '${APP_GOOGLE_URL}'
+  - with:
+      note: Google
+      steps:
+        - click:
+            shot: shot/amqoz5.dti.jpeg#149
+            object: html.textarea
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //textarea[@id='APjFqb']
+        - type:
+            shot: shot/yvyynh.dti.jpeg#260
+            object: html.textarea
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //textarea[@id='APjFqb']
+            value: HCL
+        - click:
+            shot: shot/buiwfi.dti.jpeg#706
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[2]
+        - click:
+            shot: shot/6cm4vy.dti.jpeg#939
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[2]
+        - click:
+            shot: shot/4zvvwt.dti.jpeg#1062
+            object: html.textarea
+            identifiers:
+              - properties:
+                  - content:
+                      - val: HCL
+        - click:
+            shot: shot/qljifv.dti.jpeg#1178
+            object: html.textarea
+            identifiers:
+              - properties:
+                  - content:
+                      - val: HCL
+        - click:
+            shot: shot/gfq7ba.dti.jpeg#1404
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //html/body/div/div[2]
+        - click:
+            shot: shot/ck4egm.dti.jpeg#1608
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: About
+  - with:
+      note: Google - About Google, Our Culture & Company News
+      steps:
+        - click:
+            shot: shot/i4prga.dti.jpeg#294
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Our mission is to organize the world’s information and
+                          make it universally accessible and useful.
+        - click:
+            shot: shot/g6ui7v.dti.jpeg#561
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Our mission is to organize the world’s information and
+                          make it universally accessible and useful.
+        - click:
+            shot: shot/t7wqjj.dti.jpeg#847
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          See our latest product news, AI updates and company announcements
+                          Learn more
+        - click:
+            shot: shot/skp2po.dti.jpeg#1099
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: https://lh3.googleusercontent.com/cA6h3Ltw2BzN8NXtoPW09vg830YF4TxI5qJ14U83aonUQcpAWks4FFw8SKQ3vkcNbnB-0EiUNbIWWUU8Xc9OIsRTIF8L3KqwesDl2zcm3U2Nyw673dI=w600-l80-sg-rp
+        - click:
+            shot: shot/hfypyl.dti.jpeg#1364
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: https://lh3.googleusercontent.com/cA6h3Ltw2BzN8NXtoPW09vg830YF4TxI5qJ14U83aonUQcpAWks4FFw8SKQ3vkcNbnB-0EiUNbIWWUU8Xc9OIsRTIF8L3KqwesDl2zcm3U2Nyw673dI=w600-l80-sg-rp
+vars:
+  APP_GOOGLE_URL:
+    expr: https://www.google.com/
+    modifier: in
